@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <title>보안활동 지표</title>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <span>정보보호의 날 포인트 점수 현황</span>
+    </div>
+    <div class="userInfo">
+      홍길동 : 현 누적 포인트 1000점
+    </div>
+  </header>
+  <section class="tables">
+    <div class="columns">
+      <ul>
+        <li>보안</li>
+      </ul>
+      <ul>
+        <li>PC점검</li>
+      </ul>
+      <ul>
+        <li>테스트</li>
+      </ul>
+      <ul>
+        <li>비밀번호</li>
+      </ul>
+      <ul>
+        <li>블루투스</li>
+      </ul>
+    </div>
+    <div class="columns">
+      <ul>
+        <li>보안</li>
+      </ul>
+      <ul>
+        <li>PC점검</li>
+      </ul>
+    </div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+    <div class="columns"></div>
+  </section>
+  <section class="month">
+    <% for (let i = 1; i < 13; i++) { %>
+    <ul>
+      <li><%= i %>월</li>
+    </ul>
+    <% } %>
+  </section>
+  
+</body>
+</html>

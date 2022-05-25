@@ -1,0 +1,86 @@
+:root {
+  /* Color */
+  --white-color: #ffffff;
+  --black-color:#212121;
+  --blue-color:#065fd4;
+  --red-color:#ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --columns-height: 500px;
+  --columns-width: 50px;
+  --items-width: 20px;
+  --items-height: 15px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+ul, li {
+  list-style: none;
+}
+
+header {
+  /* height: 50px; */
+  padding: var(--padding);
+  text-align: center;
+}
+
+header .title {
+  font-size: var(--font-large);
+  font-weight: bold;
+  padding: var(--padding);
+}
+
+header .userInfo {
+  font-size:  var(--font-medium);
+}
+
+.tables {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  padding: var(--padding) 0;
+}
+
+.tables .columns {
+  width: var(--columns-width);
+  height: var(--columns-height);
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.columns li {
+  border: 1px solid black;
+  background-color: skyblue;
+  margin-top: calc(var(--padding) / 2);
+}
+
+.month {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
+.month li {
+  width: var(--columns-width)
+}
